@@ -1,12 +1,11 @@
-# Woodpecker
-A python script to create personalized SVGs and PNGs based on an SVG template
+# Woodpecker 🐦
+A python script to create personalized SVGs and PNGs based on SVG and PNG templates.
 
 # Usage
-Clone the repo, use `pip3 install requirements.txt`, and run the script (python 3).
+- Clone the repo, use `pip3 install requirements.txt`, and run the script (python 3) with the `contacts.xls`, pictures, and templates (for SVG and PNG) in place.
+- For any new templates, you might need to adjust the `draw_text` parametres based on your design. By default, texts are centre aligned.
+- The script uses PIL's thumbnail method to resize the second image. The default size is `1920 × 1080`.
 
-#Dependencies
-Install GTK+ for Windows Runtime Environments
-https://sourceforge.net/projects/gtk-win/files/GTK%2B%20Runtime%20Environment/GTK%2B%202.24/gtk2-runtime-2.24.10-2012-10-10-ash.exe/download?use_mirror=excellmedia&download=
-
-Install ImageMagick tool for windows
-http://www.imagemagick.org/script/download.php
+# Note
+- In the `Image` column of the `contacts.xls` sheet, do not include the file extension.
+- Allowed image formats - Jpeg and PNG.
